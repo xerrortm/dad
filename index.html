@@ -18,14 +18,13 @@
     <button onclick="login()">Sign in with GoggleTools</button>
     <script>
       function login() {
-        window.location.href = "https://xerrortm.github.io/mla/signin/?user=dad";
+        window.location.href = "https://xerrortm.github.io/mla/signin/?user=https://www.xerrortm.github.io/dad";
       }
       const params = new URLSearchParams(window.location.search);
       const verified = params.get("verified");
       const user = params.get("user");
       if (verified === "true") {
-        document.getElementById("status").innerText =
-        "Logged in as " + decodeURIComponent(user);
+        alert("Logget in as" + decodeURIComponent(user);)
       }
     </script>
   </body>
