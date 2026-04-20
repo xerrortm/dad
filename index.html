@@ -18,7 +18,7 @@
     <button onclick="login()">Sign in with GoggleTools</button>
     <script>
       function login() {
-        window.location.href = "https://xerrortm.github.io/mla/signin/?user=" + window.location.origin;
+        window.location.href = "https://xerrortm.github.io/mla/signin/?user=" + window.location.href;
       }
       const params = new URLSearchParams(window.location.search);
       const verified = params.get("verified");
